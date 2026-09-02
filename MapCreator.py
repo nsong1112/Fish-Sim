@@ -7,5 +7,3 @@ for item in (Path.cwd() / "Templates").iterdir():
     print(item.name)
 
 template_image = input("Which template would you like to create a map from?")
-
-print(template_image)
