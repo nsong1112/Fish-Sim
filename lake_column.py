@@ -16,6 +16,7 @@ class LakeCell:
     def __init__(self, x, y, max_depth, substrate_type):
         self.x: int = x
         self.y: int = y
+        self.area: float = 1
         self.max_depth: float = max_depth
         self.substrate_type: str = substrate_type
         self.water_column: list[WaterLayer] = []
