@@ -1,0 +1,31 @@
+{
+    "Black Crappie":{
+        "optimal_temp": 0,
+        "spawning_substrate": ""
+    },
+    
+    "Bluegill":{
+        "optimal_temp": 0,
+        "spawning_substrate": ""
+    },
+
+    "Channel Catfish":{
+        "optimal_temp": 0,
+        "spawning_substrate": ""
+    },
+
+    "Largemouth Bass":{
+        "optimal_temp": 0,
+        "spawning_substrate": ""
+    },
+
+    "Muskellunge":{
+        "optimal_temp": 0,
+        "spawning_substrate": ""
+    },
+
+    "Saugeye":{
+        "optimal_temp": 0,
+        "spawning_substrate": ""
+    }
+}

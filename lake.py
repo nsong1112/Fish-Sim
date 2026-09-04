@@ -1,12 +1,9 @@
-# lake.py
 from lake_column import LakeCell
 
 class Lake:
     def __init__(self, template_file_path):
-        # The master grid that holds all the LakeCell objects
         self.grid = []
         
-        # Dimensions (Will be calculated dynamically based on your text file)
         self.width_x = 0
         self.height_y = 0
         
@@ -27,15 +24,12 @@ class Lake:
                     
                     # Enumerate gives us 'x' (the column number)
                     for x, depth_str in enumerate(depth_strings):
-                        # Convert the string (e.g., '3') into a float (e.g., 3.0)
                         cell_depth = float(depth_str.strip())
                         
                         # Create the 3D cell based on the depth number
-                        # (We'll default substrate to "mud" for this template)
                         new_cell = LakeCell(x, y, max_depth=cell_depth, substrate_type="mud")
                         row.append(new_cell)
                     
-                    # Add the finished row (a list of LakeCells) to the master grid
                     self.grid.append(row)
                     
             # Set the dimensions based on what was actually read
