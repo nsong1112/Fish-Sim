@@ -1,0 +1,37 @@
+{
+    "Winter":{
+        "cloud_chance": 0.5,
+        "low_temp": 25,
+        "high_temp": 45,
+        "rain_chance": 0.25,
+        "sunrise_hour": 7,
+        "sunset_hour" : 17
+    },
+
+    "Spring":{
+        "cloud_chance": 0.55,
+        "low_temp": 40,
+        "high_temp": 75,
+        "rain_chance": 0.3,
+        "sunrise_hour": 7,
+        "sunset_hour" : 19
+    },
+
+    "Summer":{
+        "cloud_chance": 0.55,
+        "low_temp": 70,
+        "high_temp": 90,
+        "rain_chance": 0.43,
+        "sunrise_hour": 6,
+        "sunset_hour" : 21
+    },
+
+    "Fall":{
+        "cloud_chance":0.6,
+        "low_temp": 35,
+        "high_temp": 65,
+        "rain_chance": 0.2,
+        "sunrise_hour": 7,
+        "sunset_hour" : 18
+    }
+}

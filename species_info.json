@@ -1,31 +1,37 @@
 {
     "Black Crappie":{
         "optimal_temp": 0,
-        "spawning_substrate": ""
+        "spawning_substrate": "",
+        "activity_pattern": "diurnal"
     },
     
     "Bluegill":{
         "optimal_temp": 0,
-        "spawning_substrate": ""
+        "spawning_substrate": "",
+        "activity_pattern": "diurnal"
     },
 
     "Channel Catfish":{
         "optimal_temp": 0,
-        "spawning_substrate": ""
+        "spawning_substrate": "",
+        "activity_pattern": "crepuscular"
     },
 
     "Largemouth Bass":{
         "optimal_temp": 0,
-        "spawning_substrate": ""
+        "spawning_substrate": "",
+        "activity_pattern": "diurnal"
     },
 
     "Muskellunge":{
         "optimal_temp": 0,
-        "spawning_substrate": ""
+        "spawning_substrate": "",
+        "activity_pattern": "crepuscular"
     },
 
     "Saugeye":{
         "optimal_temp": 0,
-        "spawning_substrate": ""
+        "spawning_substrate": "",
+        "activity_pattern": "crepuscular"
     }
 }

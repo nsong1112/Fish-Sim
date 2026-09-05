@@ -1,5 +1,7 @@
-# main.py
 from lake import Lake
+from lake_manager import LakeManager
+from fish import Fish
+from fish_school import FishSchool
 
 # 1. Initialize the Lake environment (This instantly builds all cells and layers!)
 my_lake = Lake('templates/test_lake.txt')
