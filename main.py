@@ -5,6 +5,7 @@ from fish_school import FishSchool
 
 # 1. Initialize the Lake environment (This instantly builds all cells and layers!)
 my_lake = Lake('templates/test_lake.txt')
+my_lake_manager = LakeManager(my_lake,"va_seasonal_info.json")
 
 # 2. Let's verify the environment built correctly
 print("--- LAKE GENERATION REPORT ---")

@@ -15,7 +15,31 @@ class LakeManager:
 
     def calculate_weather(self):
         if self.tick % 24 == 0:
-              weather_roll = random.random()
+            curr_weather_data = self.climate_data[self.current_season]
+            weather_roll = random.random()
+            
+            #rain and clouds
+            if weather_roll < curr_weather_data["rain_chance"]:
+                self.is_raining = True
+                self.is_cloudy = True
+            elif weather_roll < curr_weather_data["cloud_chance"]:
+                self.is_cloudy = True
+            else:
+                self.is_cloudy = False
+                self.is_raining = False
+            
+            #temps based on rain and clouds    
+            low = curr_weather_data["low_temp"]
+            high = curr_weather_data["high_temp"]
+            mid = (low + high) // 2 
+            
+            if self.is_raining:
+                self.current_temp = random.randint(low, mid)
+            elif self.is_cloudy:
+                self.current_temp = random.randint(low + 5, high - 5)
+            else:
+                self.current_temp = random.randint(mid, high)
+                  
 
 
     def get_season_info(self,filepath):
@@ -27,5 +51,6 @@ class LakeManager:
 
     def step(self):
         self.calculate_weather()
+        print(self)
 
         
