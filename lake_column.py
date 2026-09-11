@@ -9,8 +9,11 @@ class WaterLayer:
         self.oxygen_conc: float = 0.0
         self.plankton_density: float = 0.0
         self.sunlight_pen: float = 0.0
-        self.temperature: float = 0.0 #measured in (tbd)
-        self.vegetation_density:float = 0.0
+        self.temperature: float = 0.0 #measured in farenheit
+        self.vegetation: dict ={
+           "Algae": 0.0,
+           "Hydrilla": 0.0
+        }
 
 class LakeCell:
     def __init__(self, x, y, max_depth, substrate_type):
@@ -25,4 +28,7 @@ class LakeCell:
         for depth in range(num_layers):
          self.water_column.append(WaterLayer(depth))
          if depth == int(self.max_depth):
-            self.water_column[depth].range = self.max_depth-depth
+            self.water_column[depth].layer_height = self.max_depth-depth
+
+    def step(self):
+       pass
