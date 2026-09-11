@@ -1,6 +1,8 @@
 class Fish:
     def __init__(self,species,x,y,layer):
+
         self.lake = 5
+
         self.species: str = species
         self.x: int = x
         self.y: int = y
@@ -18,7 +20,6 @@ class Fish:
     def get_surrounding_cells(lake):
         cells = []
         
-
     #uses surrounding environment and own stats to "make decisions"
     def step(self,lake):
         if self.living:

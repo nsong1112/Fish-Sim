@@ -72,21 +72,21 @@ class LakeManager:
 
         self.day_info["get_sun_intensity"] = get_sun_intenity
     
-    def get_season_info(self,filepath):
-        with open(filepath,'r') as file:
-            lake_data = json.load(file)
+        def get_season_info(self,filepath):
+            with open(filepath,'r') as file:
+                lake_data = json.load(file)
 
-            return lake_data
+                return lake_data
 
-    def step(self):
-        hour_of_day = self.tick % 24
-        if hour_of_day == 0:
-            self.get_day_info(self.tick)
-            self.calculate_weather()
+        def step(self):
+            hour_of_day = self.tick % 24
+            if hour_of_day == 0:
+                self.get_day_info(self.tick)
+                self.calculate_weather()
 
-        self.sun_intensity = self.day_info["get_sun_intensity"](hour_of_day)
-        print(self.sun_intensity)
-        self.tick += 1
+            self.sun_intensity = self.day_info["get_sun_intensity"](hour_of_day)
+            print(self.sun_intensity)
+            self.tick += 1
 
 
         
